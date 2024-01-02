@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Places</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Your CSS styles */
+        .card {
+            border: 3px solid #9000ff;
+            padding: 10px;
+            background-color: #f0f8ff;
+            border-radius: 15px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-title {
+            font-weight: bold;
+            color: #9000ff;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .place-description {
+            text-align: justify;
+            height: 120px;
+            overflow: hidden;
+        }
+        .more-info-button {
+            margin-top: 10px;
+            background-color: #9000ff;
+            color: white;
+            border: none;
+            padding: 5px 0;
+            border-radius: 15px;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        .more-info-button:hover {
+            background-color: #ff007f;
+        }
+        header {
+            background-color: #0F2C59;
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+        }
+        footer {
+            background-color: #0F2C59;
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 5px;
+            position: absolute;
+            bottom: -1000px;
+            left: 0px;
+            width: 100%;
+        }
+        body {
+            background: linear-gradient(135deg, #ff007f, #9000ff, #00a3ff);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Historical Places in India</h1>
+    </header>
+
+    <div class="container my-4">
+        <div class="row">
+            <!-- Historical Place 1 - Taj Mahal -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Taj Mahal" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Taj Mahal</h5>
+                        <p class="card-text place-description">
+                            The Taj Mahal is an ivory-white marble mausoleum on the right bank of the Yamuna river in the Indian city of Agra.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Taj_Mahal" class="btn btn-primary more-info-button">More Info</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Historical Place 2 - Qutub Minar -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1632426237957-5ea14aae7100?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1c2VhcmNoW3JpdGVyfHx8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Qutub Minar" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Qutub Minar</h5>
+                        <p class="card-text place-description">
+                            The Qutub Minar is a UNESCO World Heritage Site and the tallest brick minaret in the world.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Qutb_Minar" class="btn btn-primary more-info-button">More Info</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Historical Place 3 - Hawa Mahal -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5a3bb03b4c326d76de73ddaa/669a47b5-f41b-4300-b910-17cb3a5bb594/The+CommonWanderer-2155-2.jpg" alt="Hawa Mahal" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Hawa Mahal</h5>
+                        <p class="card-text place-description">
+                            The Hawa Mahal, a palace in Jaipur, is renowned for its unique architecture featuring numerous windows.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Hawa_Mahal" class="btn btn-primary more-info-button">More Info</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Historical Place 4 - Amer Fort -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://www.travelwithcg.com/wp-content/uploads/2021/02/Ganesh-Pol-scaled.jpg" alt="Amer Fort" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Amer Fort</h5>
+                        <p class="card-text place-description">
+                            Amer Fort is a majestic fort located in the state of Rajasthan, near Jaipur.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Amber_Fort" class="btn btn-primary more-info-button">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Historical Place - Red Fort -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://plus.unsplash.com/premium_photo-1661919589683-f11880119fb7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Red Fort" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Red Fort</h5>
+                        <p class="card-text place-description">
+                            The Red Fort, also known as Lal Qila, is a historic fort in Delhi, and it is one of the most iconic landmarks in India.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Red_Fort" class="btn btn-primary more-info-button">More Info</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Historical Place - Mysore Palace -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1600112356915-089abb8fc71a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80" alt="Mysore Palace" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Mysore Palace</h5>
+                        <p class="card-text place-description">
+                            The Mysore Palace is a historical palace located in the city of Mysore in Karnataka.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Mysore_Palace" class="btn btn-primary more-info-button">More Info</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container my-4">
+                <div class="row">
+                    <!-- Historical Place - Gateway of India -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1598434192043-71111c1b3f41?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3024&q=80" alt="Gateway of India" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Gateway of India</h5>
+                                <p class="card-text place-description">
+                                    The Gateway of India is an iconic monument located in Mumbai, Maharashtra.
+                                </p>
+                                <a href="https://en.wikipedia.org/wiki/Gateway_of_India" class="btn btn-primary more-info-button">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Historical Place - Ajanta Caves -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img src="https://plus.unsplash.com/premium_photo-1697730376109-86bb94cd36ed?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ajanta Caves" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Ajanta Caves</h5>
+                                <p class="card-text place-description">
+                                    The Ajanta Caves are rock-cut cave monuments located in the state of Maharashtra.
+                                </p>
+                                <a href="https://en.wikipedia.org/wiki/Ajanta_Caves" class="btn btn-primary more-info-button">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Historical Place - Victoria Memorial -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1561289023-56c2e530bc8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80" alt="Victoria Memorial" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Victoria Memorial</h5>
+                                <p class="card-text place-description">
+                                    The Victoria Memorial is a grand marble building in Kolkata, West Bengal, dedicated to Victoria.
+                                </p>
+                                <a href="https://en.wikipedia.org/wiki/Victoria_Memorial,_Kolkata" class="btn btn-primary more-info-button">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+            
+
+    <footer>
+        Designed and Developed by Chirag Agrawal
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
